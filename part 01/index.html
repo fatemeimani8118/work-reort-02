@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/master.css" />
+    <title>work repotr 02 &#128579;</title>
+  </head>
+  <body>
+    <h2 id="first">first number:</h2>
+    <h2 id="second">second number:</h2>
+    <figure><img src="./img/images.png" alt="" /></figure>
+    <script>
+      dibi();
+      function dibi() {
+        let f = prompt("inter your first number");
+        let s = prompt("inter your second number");
+        // Check if the input is a number
+        if (isNaN(f) || isNaN(s)) {
+          alert("please inter a number");
+          dibi();
+        }
+         else {
+          document.getElementById("first").innerText = "first number : " + s;
+          document.getElementById("second").innerText = "second number : " + f;
+        }
+      }
+    </script>
+  </body>
+</html>
